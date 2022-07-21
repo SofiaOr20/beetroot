@@ -28,5 +28,6 @@ urlpatterns = [
     path('add', PersonCreateView.as_view()),
     path('accounts/', include('django.contrib.auth.urls')),
     path('api/', async_view),
-    path("sync/", sync_view)
+    path("sync/", sync_view),
+    path("synca/", sync_view)
 ]

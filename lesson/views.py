@@ -120,3 +120,7 @@ def http_call_sync():
 def sync_view(request):
     http_call_sync()
     return HttpResponse("Blocking HTTP request")
+
+
+def request_new(request):
+    return HttpResponse("ok")
